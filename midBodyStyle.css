@@ -1,0 +1,164 @@
+.midAd{
+	height: 250px;
+    width: 850px;
+    margin: 16px 0;
+    position: relative;
+}
+
+
+.bannerB{
+	height: 250px;
+	width: 583px;
+	float: left;
+}
+
+.articleBanner{
+	height: 100%;
+	width: 100%;
+
+}
+
+.bannerB:hover{
+	cursor: pointer;
+}
+
+.scroll2{
+	height: 250px;
+	width: 583px;
+}
+
+.scroll2 #pic2{
+	width:100%;
+}
+.scroll2 #mask{
+	position: absolute;
+}
+
+.articleBannerTxt{
+	height: 83px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.articleBannerTxt .articleTxt{
+	height: 83px;
+	width:583px;
+	background-color: rgba(0,0,0,0.7);
+	text-indent: 8px;
+}
+
+.articleBannerTxt .articleTxt a{
+	line-height: 83px;
+	color: white;
+	font-size: 25px;
+
+}
+.appDownload{
+	float: right;
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+
+.appDownload img{
+	width: 100%;
+
+}
+
+.appDownload #back{
+	object-fit: cover;
+	position: absolute;
+	top:0;
+	left:0;
+	backface-visibility: hidden;
+	transform:rotateY(270deg);
+	width: 250px;
+	height: 250px;
+}
+
+#headline,#weibo{
+	position: absolute;
+	width: 84px;
+    height: 23px;
+    cursor: pointer;
+}
+
+#headline{
+	top: 213px;
+    left: 37px;
+
+}
+
+#weibo{
+	top: 213px;
+    left: 128px;
+}
+
+.appDownload #front{
+	object-fit: cover;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.loading{
+	width: 850px;
+	height: 85px;
+	background: url("images/loading.png") no-repeat 43.5% 58%;
+	line-height: 85px;
+	text-indent: 46%;
+	font-weight: bold;
+	color:rgb(49,57,60);
+	font-size:20px;
+	cursor: pointer;
+}
+
+
+
+.circleLine2{
+	position: absolute;
+	bottom: 0px;
+	width: 582px;
+	height: 83px;
+	margin: 0 auto;
+}
+
+.circleLine2:hover{
+	cursor: pointer;
+}
+
+.circleBox2{
+	width: 582px;
+	height: 83px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.circle21, .circle22{
+	width: 140px;
+	height: 83px;
+	right:0;
+	top:33px;
+	position: absolute;
+}
+
+.circle21 div, .circle22 .circleInBox2{
+	margin-right:15px;
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+
+
+.backToTop{
+	display: block;
+	/*position: absolute;*/
+	position: fixed;
+	margin-left: -60px;
+	bottom: 50px;
+	
+	height: 40px;
+	width: 40px;
+	background: url("images/backToTop.png") no-repeat center center;
+	cursor: pointer;
+}
+

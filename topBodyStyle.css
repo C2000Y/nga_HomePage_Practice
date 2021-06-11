@@ -1,0 +1,583 @@
+.body{
+	width: 1200px;
+	display: block;
+	margin: 0 auto;
+	font-family: "Microsoft YaHei", 微软雅黑, Arial, Helvetica, sans-serif, SimSun;
+	position: relative;
+	
+	min-width: 1
+}
+
+
+.blockOverFlow{
+	background-color: rgb(255,255,255);
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	min-width: 1200px;
+}
+
+.body #mainBody{
+	width: 1200px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+
+}
+
+.leftBox{
+	width: 850px;
+	float: left;
+	position: relative;
+	
+}
+
+.leftBoxBar{
+	border-bottom: 1px solid RGB(214,214,214);
+	width: 850px;
+	height: 56px;
+}
+
+
+.leftBoxBar .good{
+	float: right;
+	line-height: 56px;
+	height: 57px;
+	width: 100px;
+	text-align: left;	
+	position: relative;
+}
+
+.more{
+	margin-left: 50px;
+	float: right;
+	line-height: 56px;
+	height: 57px;
+	width: 70px;
+	text-align: left;	
+	position: relative;
+	
+}
+.icon2, .icon1{
+	background: url("images/drawDown.png") no-repeat;
+	width: 15px;
+	height: 9px;
+	position: absolute;
+	top:26px;
+	right: 10px;
+	transition: all ease .3s;
+}
+.more:hover{
+	cursor: pointer;
+}
+.good:hover{
+	cursor: pointer;
+}
+.good:hover > .icon1, .more:hover > .icon2{
+	transform: rotate(180deg);
+}
+.nullplace1,.nullplace2{
+	position: absolute;
+	height: 290px;
+	width: 134px;
+}
+
+.goodDraw{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	object-fit: cover;
+	border: 1px solid #d6d7d8;
+	animation-name: fadeInDown;
+	animation-duration: 0.2s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+.moreDraw{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	object-fit: cover;
+	left: -60px;
+	width: 134px;
+	border: 1px solid #d6d7d8;
+	animation-name: fadeInDown;
+	animation-duration: 0.2s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+.goodDraw .li{
+	width: 122px;
+	height: 35px;
+    line-height: 35px;
+    text-indent: 15px;
+    border-bottom: 1px solid #d6d7d8;
+    margin: 0 5px;
+    font-size: 14px;
+    color: #454545;
+}
+
+.moreDraw .li{
+	width: 122px;
+	height: 35px;
+    line-height: 35px;
+    text-indent: 17px;
+    border-bottom: 1px solid #d6d7d8;
+    margin: 0 5px;
+    font-size: 14px;
+    color: #454545;
+
+}
+
+.li:hover{
+	font-weight: bold;
+}
+
+
+.rightBox{
+	width: 327px;
+	float: right;
+	position: relative;
+}
+
+.mainNavi{
+	float: left;
+	line-height: 56px;
+	height: 52px;
+	padding: 0 10px;
+	margin:0 10px;
+	text-align: center;	
+}
+
+.mainNavi:hover{
+	color:rgb(103,118,112);
+	cursor: pointer;
+}
+
+.chose{
+	float: left;
+	line-height: 56px;
+	height: 52px;
+	padding: 0 10px;
+	margin:0 10px;
+	text-align: center;	
+	border-bottom: 4px solid RGB(49,57,60);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.chose:hover{
+	color:rgb(103,118,112);
+	cursor: pointer;
+}
+
+.leftBox2{
+	width: 850px;
+	height: 308px;
+}
+
+.leftBox2 #inbox_left{
+	padding: 16px 16px 16px 0px;
+	width: 417px;
+	height: 276px;
+	float: left;
+	border-bottom: 1px solid RGB(214,214,214);
+}
+
+.leftBox2 #inbox_right{
+	padding: 16px 0px 16px 0px;
+	width: 417px;
+	height: 276px;
+	float: right;
+	border-bottom: 1px solid RGB(214,214,214);
+}
+
+.leftBox2 #inbox_left .titleImg, .leftBox2 #inbox_right .titleImg{
+	width: 417px;
+	height: 159px;
+	position: relative;
+}
+
+.leftBox2 #inbox_left .titleImg img, .leftBox2 #inbox_right .titleImg img{
+	height: 100%;
+	width: 100%;
+}
+
+.titleImg:hover{
+	cursor: pointer;
+}
+.animated{
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadein{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+}
+
+.titleImg .imgmask{
+	width: 417px;
+	height: 159px;
+	position: absolute;
+	top:0;
+	color:transparent;
+	text-align: center;	
+	background: url("images/blackcover.png") repeat-y;
+	color:white;
+}
+.titleImg .imgmask span{
+	line-height: 25px;
+	padding-bottom:  3px;
+	font-size:20px;
+	border-bottom: 2px solid white;
+}
+.titleImg .imgmask span, .titleImg .imgmask a{
+	position: relative;
+	top:55px;
+}
+
+.titleImg .imgmask a{
+	font-size:13px;
+	top:60px;
+}
+/*
+.titleImg .imgmask:hover > .showmask span{
+	border-bottom: 2px solid white;
+}
+
+.titleImg .imgmask:hover > .showmask{
+
+	width: 417px;
+	height: 159px;
+	background: url("images/blackcover.png") repeat-y;
+	color:white;
+}
+*/
+
+.leftBox2 #txt{
+	width: 417px;
+	position: relative;
+	bottom: 0px;
+	height: 118px;
+}
+.leftBox2 #txt #title{
+	font-size: 13px;
+	font-weight: bold;
+	width: 417px;
+	line-height: 41px;
+}
+.leftBox2 #txt #title:hover{
+	cursor: pointer;
+	color: RGB(103,113,117);
+}
+
+.leftBox2 #txt #title img{
+	width: 6px;
+}
+
+.leftBox2 #txt #content{
+	font-size: 13px;
+	line-height: 20px;
+}
+
+
+.leftBox2 #txt .from{
+	position: absolute;
+	width:100%;
+	height: 37px;
+	bottom: 0px;
+}
+.leftBox2 #txt #directory, .leftBox2 #txt #author{
+	font-size: 13px;
+	line-height: 42px;
+	float: left;
+	width: 167px;
+}
+
+.leftBox2 #txt #date{
+	font-size: 13px;
+	line-height: 42px;
+	float: right;
+}
+
+.rightBoxTop{
+	height: 365px;
+	width:	327px;
+	border-bottom: 1px solid RGB(214,214,214);
+}
+
+.rightBoxTop .topBar{
+	height: 56px;
+	line-height: 56px;
+	font-size: 16px;
+	background:url("images/热帖.png") no-repeat 0 50%;
+	border-bottom: 1px solid RGB(214,214,214);
+}
+
+.topBar #hotTitle{
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	margin-left: 38px;
+}
+
+#rollDice{
+	float: right;
+	width: 75px;
+}
+#rollDice:hover{
+	cursor: pointer;
+}
+#dice{
+	float: left;
+	margin-top: 5px;
+}
+
+
+
+.topBar #topBarRight{
+	float: right;
+	font-weight: normal;
+	position: relative;
+	right: 5px;
+}
+
+#dice{
+	width: 30px;
+	height: 30px;
+}
+
+.topBar #topBarRight img{
+	padding: 0px 8px 0px 8px;
+	position: relative;
+	top: 5px;
+}
+
+.hot{
+	height: 248px;
+	width: 327px;
+	margin: 16px 0px 16px 0px;
+}
+
+.hot #content{
+	width: 327px;
+	height: 50px;
+	margin: 16px 0;
+}
+
+.hot #content img{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+}
+.hot #hotContent{
+	width: 261px;
+	height: 50px;
+	float: right;
+	font-size: 12px;
+}
+
+.hot #hotContent #title{
+	font-weight: bold;
+}
+
+.hot #hotContent img{
+	width: 6px;
+	height: 6px;
+	position: relative;
+	bottom: 2px;
+}
+.hot #hotContent #description:hover{
+	color: RGB(103,113,117);
+}
+.hot #hotContent:hover{
+	cursor: pointer;
+}
+
+.rightBoxBot{
+
+}
+
+.rightBoxBot .botBar{
+	height: 42px;
+	border-bottom: 1px solid RGB(214,214,214);
+	line-height: 42px;
+	text-align: center;
+	position: relative;
+}
+.rightBoxBot .botBar #eventHide{
+	width:123px;
+	height: 41px;
+	margin: 0 20px;
+	position: absolute;;
+}
+
+
+.rightBoxBot .botBar #eventShow{
+	width:123px;
+	height: 41px;
+	margin: 0 20px;
+	position: absolute;
+	cursor: pointer;
+	font-weight: bold;
+	border-bottom: 2px solid RGB(49,57,60);
+}
+
+.rightBoxBot .botBar #competitionHide{
+	width:123px;
+	height: 41px;
+	float: right;
+	margin: 0 20px;
+}
+
+.rightBoxBot .botBar #competitionShow{
+	width:123px;
+	height: 41px;
+	float: right;
+	margin: 0 20px;
+	font-weight: bold;
+	border-bottom: 2px solid RGB(49,57,60);
+}
+
+.rightBoxBot .botBar #competitionHide:hover{
+	cursor: pointer;
+}
+.rightBoxBot .botBar #competitionShow:hover{
+	cursor: pointer;
+}
+
+.rightBoxBot .botBar #eventHide:hover{
+	cursor: pointer;
+}
+
+.rightBoxBot .botBar #line{
+	border-left: 1px solid RGB(214,214,214);
+	height: 16px;
+	width: 0px;
+	position: absolute;
+	right:50%;
+	top:13px;
+}
+
+
+.rightBoxBot .forumEvent #events{
+	margin: 16px 0;
+	height: 50px;
+}
+.forumEvent #events img{
+	height: 100%;
+	float: left;
+}
+.forumEvent #events #eventContent{
+	float: left;
+	margin-left: 16px;
+	font-size: 12px;
+	width: 261px;
+}
+#eventContent #title{
+	font-weight: bold;
+}
+#eventContent #reward a{
+	border: 1px solid #8e989c;
+	border-radius: 4px; 
+	margin-right: 3px;
+}
+
+#eventContent #timeLimit{
+	float: right;
+}
+
+#eventContent #eventDescription:hover{
+	color:rgb(103,113,117);
+	cursor: pointer;
+}
+
+.recommendCompetition .comp{
+	margin: 16px 0 16px 0;
+	height: 50px;
+	width: 100%;
+	font-size: 12px;
+}
+
+.recommendCompetition .comp:hover{
+	cursor: pointer;
+	color:rgb(103,113,107);
+}
+
+.recommendCompetition .comp img{
+	border-radius: 6px;
+	float: left;
+	height: 100%;
+}
+
+.recommendCompetition .comp #compDetail{
+	float: left;
+	margin-left: 16px;
+	width: 261px;
+}
+
+.recommendCompetition .comp #compDetail #compName{
+	font-weight: bold;
+	float: left;
+}
+.recommendCompetition .comp #compDetail #compTime{
+	float: right;
+}
+
+.recommendCompetition .comp #compDetail #compTime div{
+	background-color: rgb(255,204,0);
+	float: right;
+	height: 15px;
+	width: 48px;
+	text-align: center;
+	margin-left: 3px;
+	border-radius: 5px;
+
+}
+
+.recommendCompetition .comp #compScore{
+	float: left;
+	margin-left: 16px;
+	width: 218px;
+	height: 34px;
+}
+.recommendCompetition .comp #compScore #teamA{
+	width: 60px;
+	height:34px;
+	line-height: 34px;
+	text-align: right;
+	float:left;
+
+}
+.recommendCompetition .comp #compScore #teamAScore, .recommendCompetition .comp #compScore #teamBScore{
+	float:left;
+	height: 32px;
+    width: 23px;
+    line-height: 32px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin:0 5px 0 5px;
+    border:1px solid #30383c;
+}
+
+.recommendCompetition .comp #compScore #colon{
+	float:left;
+	height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    text-align: center;
+}
+.recommendCompetition .comp #compScore #teamB{
+	width: 80px;
+	height:34px;
+	line-height: 34px;
+	text-align: left;
+	float:left;
+}

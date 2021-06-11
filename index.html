@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<link rel="stylesheet" type="text/css" href="topBodyStyle.css">
+	<link rel="stylesheet" type="text/css" href="midBodyStyle.css">
+	<link rel="stylesheet" type="text/css" href="tailBodyStyle.css">
+	<script type="text/javascript" src="script.js"></script>
+	<meta charset="utf-8"> 
+	<title>NGA玩家社区 - NGA.CN</title>
+	<link rel="title icon" href="images/favicon.ico">
+</head>
+<body onload="autoNext();autoNext2()">
+	<div class="top">
+	</div>
+	<!--轮播图 onload="autoNext();"-->
+	<div class="banner">
+		<!--图片-->
+		<div class="scrollPic">
+			<div class="scroll" style="display: block;">
+				<div class="mask" style="background: url('images/cat.jpg')">
+				</div>
+				<img class="pic" src="images/cat.jpg" alt="">
+			</div>
+			<div class="scroll" style="display: none;">
+				<div class="mask" style="background-image: url('images/daysGone.jpg')">
+				</div>
+				<img class="pic" src="images/daysGone.jpg" alt="">
+			</div>
+			<div class="scroll" style="display: none;">
+				<div class="mask" style="background-image: url('images/stone.jpg')">
+				</div>
+				<img class="pic" src="images/stone.jpg" alt="">
+			</div>
+			<div class="scroll" style="display: none;">
+				<div class="mask" style="background-image: url('images/qq.jpg')">
+				</div>
+				<img class="pic" src="images/qq.jpg" alt="">
+			</div>
+			<div class="scroll" style="display: none;">
+				<div class="mask" style="background-image: url('images/gongji.jpg')">
+				</div>
+				<img class="pic" src="images/gongji.jpg" alt="">
+			</div>
+		</div>
+		<div class="pic">
+			<div id="right" onclick="next()">
+			</div>
+			<div id="left" onclick="prev()">
+			</div>
+		</div>
+				<!--文字-->
+		<div class="bannertxt">
+			<div class="txt" style="display: block;">
+				<a>
+					《另一个伊甸：超越时空的猫》当我化身为一只穿越地盘的猫？
+				</a>
+			</div>
+			<div class="txt" style="display: none;">
+				<a>
+					往日不再：丧尸海中的求生路与摩托车上的轻骑兵
+				</a>
+			</div>
+			<div class="txt" style="display: none;">
+				<a>
+					最前线周报 贫瘠之地的锤炼#4 警惕Team5打平衡牌！
+				</a>
+			</div>
+			<div class="txt" style="display: none;">
+				<a>
+					QQ名人赛全明星王牌赛王者专场第六期 管栎X韩佩泉闪击峡谷！
+				</a>
+			</div>
+			<div class="txt" style="display: none;">
+				<a>
+					原创长文：注视着你的“影子社团”——共济会
+				</a>
+			</div>
+		</div>
+		<!--圆点-->
+		<div class="circleLine">
+			<div class="circleBox">
+				<div class="circle">
+					<div>
+						<img src="images/circle.png">
+					</div>
+					<div>
+						<img src="images/circle.png">
+					</div>
+					<div>
+						<img src="images/circle.png">
+					</div>
+					<div>
+						<img src="images/circle.png">
+					</div>
+					<div>
+						<img src="images/circle.png">
+					</div>
+				</div>
+				<div class="circle2">
+					<div class="circleInBox">
+						<img class="circle_block" src="images/circle_block.png" style="display: block" id="0">
+					</div>
+					<div class="circleInBox">
+						<img class="circle_block" src="images/circle_block.png" style="display: none" id="1">
+					</div>
+					<div class="circleInBox">
+						<img class="circle_block" src="images/circle_block.png" style="display: none" id="2">
+					</div>
+					<div class="circleInBox">
+						<img class="circle_block" src="images/circle_block.png" style="display: none" id="3">
+					</div>
+					<div class="circleInBox">
+						<img class="circle_block" src="images/circle_block.png" style="display: none" id="4">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--导航栏-->
+	<div class="naviBar">
+			<div class="right">
+				<div id="item">
+					<a>
+						<nobr>
+							<img src="images/登录.svg" id="log">
+							登录
+						</nobr>
+					</a>
+				</div>
+				<div id="item">
+					<a>
+						<nobr>
+							<img src="images/注册.svg" id="reg">
+							注册
+						</nobr>
+					</a>
+				</div>
+			</div>		
+			<div class="left">
+				<div id="logo">
+					<img src="images/logo.png">
+				</div>
+				<div id="item">
+					<a>首页</a>
+				</div>
+				<div id="item">
+					<a>论坛</a>
+				</div>
+				<div id="item">
+					<a>评分</a>
+				</div>
+				<div id="item">
+					<a>赛事</a>
+				</div>
+				<div id="item">
+					<a>专题</a>
+				</div>
+				<div id="item">
+					<a>移动端</a>
+				</div>
+			</div>
+	</div>
+	<!--内容-->
+	<div class="blockOverFlow">
+		</div>
+	<div class="bodyoutbox">
+	<div class="body">
+		 
+		<div id="mainBody">
+			<!--内容左边部分-->
+			<div class="leftBox">
+				<!--内容部分导航栏-->
+				<div class="leftBoxBar">
+					<div class="chose">
+						<a>
+							全部
+						</a>			
+					</div>
+					<div class="mainNavi">
+						<a>
+							游戏综合
+						</a>
+					</div>
+					<div class="mainNavi">
+						<a>
+							游戏研究与杂谈
+						</a>
+					</div>
+					<div class="mainNavi">
+						<a>
+							魔兽世界
+						</a>
+					</div>
+					<div class="mainNavi">
+						<a>
+							炉石传说
+						</a>
+					</div>
+					<div class="more">
+						更多
+						<div class="icon2">
+						</div>
+						<div class="nullplace2">	
+						</div>						
+						<div class="moreDraw">
+							<div class="li">DOTA2</div>
+							<div class="li">英雄联盟</div>
+							<div class="li">守望先锋</div>
+							<div class="li">明日方舟</div>
+							<div class="li">最终幻想14</div>
+							<div class="li">原神</div>
+							<div class="li">战双帕弥什</div>
+							<div class="li">王者荣耀</div>
+						</div>
+					</div>
+					<div class="good">
+						精品栏目 
+						<div class="icon1"></div>
+						<div class="nullplace1">	
+						</div>
+						<div class="goodDraw">
+							<div class="li">老电影评分</div>
+							<div class="li">漩涡观影指数</div>
+							<div class="li">上周蝗了啥</div>
+							<div class="li">有啥新手游</div>
+							<div class="li">炉石国服周报</div>
+							<div class="li">下周大事件</div>
+							<div class="li">DOTA2伐木指北</div>
+							<div class="li">NGA模玩测评</div>
+						</div>
+					</div>
+				</div>
+				<!--导航栏下_分区_全部-->
+				<!--第一行_内容-->
+				<div class="leftBox2">
+					<div id="inbox_left">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-p219Q2o-6owjK1xT1kSdw-5b.jpg">
+							<div class="imgmask animated fadein" style="display: none;">
+								<div class="showmask">
+									<span>
+										万智牌
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 揭露万智牌竞技场隐藏分系统
+							</div>
+							<div id="content">
+								<!--内容-->
+								考虑到自己的账号安全以及万智牌玩家群体的体育精神，建议读者仅将本文作为参考，而不是当作一个可操作的上分指南。
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：万智牌
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：跑调的舟
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.31
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="inbox_right">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/rushi.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										炉石传说
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 黄金战队联赛第四周：全场最佳异灵术
+							</div>
+							<div id="content">
+								<!--内容-->
+								2021《炉石传说》黄金战队联赛在5月5日正式回归，今年的黄金战队联赛加入了KZG和LGD两支新队伍
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：炉石传说
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：Adder59
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.30
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--第二行_内容-->
+				<div class="leftBox2">
+					<div id="inbox_left">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/game1.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										游戏综合
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 生化变种评测：乏善可陈的动作体验与空洞单调的沙盒内容
+							</div>
+							<div id="content">
+								<!--内容-->
+								作为一个“开放世界RPG”，大概它真正做好的只有开放和世界，而所有关于RPG的内容全都是一团糟。
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：游戏综合
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：hjyx0
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.29
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="inbox_right">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/rushi2.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										炉石传说
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 炉石传说哀嚎洞穴首批新卡预览
+							</div>
+							<div id="content">
+								<!--内容-->
+								直接吃手牌的鱼人，萨满的优质过牌？迷你扩展新卡预览开启！今晨公布8张新卡，包括中立、德鲁伊传说随从等。
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：炉石传说
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：hcahcsroR
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.29
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--内容内专栏轮播图-->
+				<div class="midAd">
+					<!--图片-->
+					<div class="bannerB">
+					<div class="articleBanner">
+						<div class="scroll2" style="display:block;">
+							<img id="mask" src="images/-ikzzQ5-40l5K4T8S2h-2u.png">
+							<img id="pic2" src="images/-p219Q2o-cng3K27T3cSjg-8c.jpg">
+						</div>
+						<div class="scroll2" style="display:none;">
+							<img id="mask" src="images/-ikzzQ5-40l5K4T8S2h-2u.png">
+							<img id="pic2" src="images/-421abQj28-9xi5Z10T3cSjg-8c.jpg">
+						</div>
+						<div class="scroll2" style="display:none;">
+							<img id="mask" src="images/-ikzzQ5-40l5K4T8S2h-2u.png">
+							<img id="pic2" src="images/-p219Q2o-bpssZeT3cSjg-8c.jpg">
+						</div>
+						<div class="scroll2" style="display:none;">
+							<img id="mask" src="images/-ikzzQ5-40l5K4T8S2h-2u.png">
+							<img id="pic2" src="images/-421abQj28-9xi5Z10T3cSjg-8c.jpg">
+						</div>
+					</div>
+					<!--文字-->
+					<div class="articleBannerTxt">
+						<div class="articleTxt" style="display: block;">
+							<a>
+								最前线周报 贫瘠之地的锤炼#4
+							</a>
+						</div>
+						<div class="articleTxt" style="display: none;">
+							<a>
+								贫瘠之地的锤炼周报第3期
+							</a>
+						</div>
+						<div class="articleTxt" style="display: none;">
+							<a>
+								老外怎么看：MSI对抗赛第四日
+							</a>
+						</div>
+						<div class="articleTxt" style="display: none;">
+							<a>
+								贫瘠之地的锤炼周报第2期
+							</a>
+						</div>
+					</div>
+					<div class="circleLine2">
+						<div class="circleBox2">
+							<div class="circle21">
+								<div>
+									<img src="images/circle.png">
+								</div>
+								<div>
+									<img src="images/circle.png">
+								</div>
+								<div>
+									<img src="images/circle.png">
+								</div>
+								<div>
+									<img src="images/circle.png">
+								</div>>
+							</div>
+							<div class="circle22">
+								<div class="circleInBox2">
+									<img class="circle_block2" src="images/circle_block.png" style="display: block" id="0">
+								</div>
+								<div class="circleInBox2">
+									<img class="circle_block2" src="images/circle_block.png" style="display: none" id="1">
+								</div>
+								<div class="circleInBox2">
+									<img class="circle_block2" src="images/circle_block.png" style="display: none" id="2">
+								</div>
+								<div class="circleInBox2">
+									<img class="circle_block2" src="images/circle_block.png" style="display: none" id="3">
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="appDownload">
+						<div id="back">
+							<img src="images/-ikzzQ5-c179K9ToS8c-8c.png">
+							<a href="https://www.toutiao.com/c/user/6063361128/#mid=6063361128" target="_blank"><img id="headline" src="images/头条号.png" ></a>
+							<a href="https://weibo.com/nga178com" target="_blank"><img id="weibo" src="images/微勃.png"></a>
+						</div>
+						<div id="front">
+							<img src="images/-ikzzQ5-92tjK16ToS8c-8c.png">
+						</div> 
+					</div>
+				</div>
+
+				<!--第3行的内容部分-->
+				<div class="leftBox2" style="border-top: 1px solid RGB(214,214,214)">
+					<div id="inbox_left">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/手办.jpg">
+							<div class="imgmask" style="display: none;">
+								<div >
+									<span>
+										NGATOYS
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								2021年5月第五周手办模型情报汇总
+							</div>
+							<div id="content">
+								<!--内容-->
+								大家可以回复说说本周最喜欢的手办/模型，所有符合要求的回复都将获得NGATOYS版15声望。	
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：NGATOYS
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：hcahcsroR
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.30
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="inbox_right">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-bi53cQ2o-gd68KwT1kSdw-5b.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										狼人对决
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 狼人对决试玩体验/评测
+							</div>
+							<div id="content">
+								<!--内容-->
+								狼人对决这款游戏已经上线了有一段时间了，但至今为止还没有针对这款游戏的游戏相关的评测
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：狼人对决
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：MMMMMMISS
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.28
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--第4行的内容部分-->
+				<div class="leftBox2">
+					<div id="inbox_left">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-bi53cQ2o-jsa1K17T1kSdw-5b.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										魔兽世界
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								我们多一个世界：说出你最爱的魔兽音乐赢取音乐节门票
+							</div>
+							<div id="content">
+								<!--内容-->
+								《魔兽世界》音乐节·成都站即将在 2021年6月5日至5月6日 于 成都东郊记忆 举办~
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：魔兽世界
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：bloodsaya
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.28
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="inbox_right">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-bi53cQ2o-12i5K10T1kSdw-5b.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										网事杂谈
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 注视着你的“影子社团”——共济会
+							</div>
+							<div id="content">
+								<!--内容-->
+								在中二病时期，你也许曾幻想过加入一个神秘组织，组织里在进行着各种各样的秘密活动。这种想法在现在看来无非就是把自己与其他人区分开来
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：网事杂谈
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：sorma锁
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.28
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--第5行的内容部分-->
+				<div class="leftBox2">
+					<div id="inbox_left">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-421abQ2o-1mhK1hT1kSdw-5b.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										NGATOYS
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								MG天蚀高达 SEED剧场版制作中 新漫画 SEED ECLIPSE
+							</div>
+							<div id="content">
+								<!--内容-->
+								"机动战士高达SEED"系列MSV新企划启动！主角MS'天蚀高达'最快速度确定立体化！千万别错过今后的展开。敬请期待后续情报！	
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：NGATOYS
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：hcahcsroR
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.29
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="inbox_right">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-421abQ2o-4mtkZcT1kSfa-5b.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										另一个伊甸 : 超越时空的猫
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 《另一个伊甸：超越时空的猫》当我化身为一只穿越地盘的猫
+							</div>
+							<div id="content">
+								<!--内容-->
+								心动代理的日本聚逸株式会社旗下WFS的人气之作《另一个伊甸：超越时空的猫》今日更新全新版本“穿越地盘的猫”。
+							</div>
+							<div class="from">
+									<div id="directory">
+									<!--分区归属-->
+									版面：另一个伊甸 : 超越时…
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：lian1121
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.26
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--第6行的内容部分-->
+				<div class="leftBox2">
+					<div id="inbox_left">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-421abQ2o-6ie3ZdT1kSdw-5b.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										江南百景图
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								鸟兽争鸣 江南繁华！《江南百景图》新版本来了
+							</div>
+							<div id="content">
+								<!--内容-->
+								5月27日，古镇模拟经营手游《江南百景图》喜迎1.4.3版本。
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：江南百景图
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：Mantou233333
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.27
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="inbox_right">
+						<!--封面-->
+						<div class="titleImg">
+							<img src="images/-421abQ2o-a32kZcT1kSdw-5b.jpg">
+							<div class="imgmask" style="display: none;">
+								<div class="showmask">
+									<span>
+										手机研究所
+									</span>
+									<br>
+									<a>
+										read more
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="txt">
+							<div id="title">
+								<img src="images/圆点.svg" style="margin: 1px;">
+								<!--标题-->
+								 西装狂魔降临！腾讯红魔游戏手机6R满足更多元化玩家需求
+							</div>
+							<div id="content">
+								<!--内容-->
+								基于此前红魔6、红魔6 Pro强大无匹的硬件“底子”，带来了一款全新形态、足以击中当今玩家“小心思”的全新“西装狂魔”。
+							</div>
+							<div class="from">
+								<div id="directory">
+									<!--分区归属-->
+									版面：手机研究所
+								</div>
+								<div id="author">
+									<!--作者-->
+									楼主：丢你拉姆
+								</div>
+								<div id="date">
+									<!--日期-->
+									2021.05.27
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="loading">
+					点击加载更多内容 . . .
+				</div>
+				
+			</div>
+
+			<!--内容右边部分-->
+			<div class="rightBox">
+				<!--上半部分_热帖-->
+				<div class="rightBoxTop">
+					<div class="topBar">
+						<div id="hotTitle">热帖</div>
+						<div id="rollDice">
+							<div id="dice">
+								<img src="images/dice.png">
+							</div>
+							<div id="roll">ROLL</div>
+						</div>
+					</div>
+					<div class="hot">
+						<div id="content">
+							<img src="images/-ikzzQ5-efuiK3S1o-1o.png">
+							<div id="hotContent">
+								<div id="title">
+									<img src="images/圆点.svg"> 大时代
+								</div>
+									<div id="description">
+										玄学炒股系列3:满仓超短，满仓梭哈，见证2021年本金十倍
+									</div>
+							</div>
+						</div>
+						<div id="content">
+							<img src="images/-ikzzQ5-efuiK3S1o-1o.png">
+							<div id="hotContent">
+								<div id="title">
+									<img src="images/圆点.svg"> 大时代
+								</div>
+									<div id="description">
+										2021年股票聊天帖
+									</div>
+							</div>
+						</div>
+						<div id="content">
+							<img src="images/-ikzzQ5-hyalK2S1o-1o.png">
+							<div id="hotContent">
+								<div id="title">
+									<img src="images/圆点.svg"> 原神
+								</div>
+								<div id="description">
+									[闲聊杂谈]各位能说一下你们一见钟情时候的感觉吗
+								</div>
+							</div>
+						</div>
+						<div id="content">
+							<img src="images/-ikzzQ5-g478K3S1o-1o.png">
+							<div id="hotContent">
+								<div id="title">
+									<img src="images/圆点.svg"> 艾泽拉斯议事厅 - Hall of Azeroth
+								</div>
+								<div id="description">
+									[MDI] [暗影国度] [吐槽] 盲猜一手  叶落贼赛后一定会说的一句话
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--下半部分_论坛活动以及赛事-->
+				<div class="rightBoxBot">
+					<div class="botBar">
+						<div id="eventShow" style="display: block;">
+							论坛活动
+						</div>
+						<div id="eventHide" style="display: none;">
+							论坛活动
+						</div>
+						<div id="line">
+						</div>
+						<div id="competitionShow" style="display: none;">
+							推荐赛事
+						</div>
+						<div id="competitionHide" style="display: block;">
+							推荐赛事
+						</div>
+					</div>
+					<div class="forumEvent" style="display: block;">
+						<div id="events">
+							<img src="images/-421abQ2o-ciniK2S1o-1o.jpg">
+							<div id="eventContent">
+								<div id="eventDescription">
+									<div id="title">
+										QQ名人赛预测比赛首杀枪械
+									</div>
+									<div>
+										ROLL吃鸡手柄
+									</div>
+								</div>
+								<div id="reward">
+									<a>吃鸡手柄</a>
+									<div id="timeLimit">
+										5月26日——5月31日
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="events">
+							<img src="images/-p219Q16w-ejuvKiT8S1o-1o.jpg">
+							<div id="eventContent">
+								<div id="eventDescription">
+									<div id="title">
+										NGA众测——技嘉主板
+									</div>
+									<div>
+										PRO B560M AORUS PRO
+									</div>
+								</div>
+								<div id="reward">
+									<a>技嘉主板，技嘉周边</a>
+									<div id="timeLimit">
+										04.30—05.11
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="events">
+							<img src="images/-421abQ16v-6i6eK2S1o-1o.jpg">
+							<div id="eventContent">
+								<div id="eventDescription">
+									<div id="title">
+										2021王者荣耀KHL春季赛活动
+									</div>
+									<div>
+										Slogan征集
+									</div>
+								</div>
+								<div id="reward">
+									<a>西伯利亚S21U耳机</a>
+									<div id="timeLimit">
+										4.17-4.24
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="events">
+							<img src="images/-421abQ16v-6i6eK2S1o-1o.jpg">
+							<div id="eventContent">
+								<div id="eventDescription">
+									<div id="title">
+										人人都是盈通产品经理
+									</div>
+									<div>
+										NGA专属福利放送
+									</div>
+								</div>
+								<div id="reward">
+									<a>机械键盘,机箱,樱瞳盲盒,公仔</a>
+									<div id="timeLimit">
+										04.12---04.16
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="events">
+							<img src="images/-421abQbupg-440bK2S1o-1o.jpg">
+							<div id="eventContent">
+								<div id="eventDescription">
+									<div id="title">
+										《忘川风华录》现金激励创作活动
+									</div>
+									<div id="eventDescription">
+										勿忘风华
+									</div>
+								</div>
+								<div id="reward">
+									<a>创作基金</a>
+									<a>论坛徽章</a>
+									<div id="timeLimit">
+										3.19-4.20
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="events">
+							<img src="images/-421abQj0y-5ohmKgT8S1o-1o.jpg">
+							<div id="eventContent">
+								<div id="eventDescription">
+									<div id="title">
+										众测：联想拯救者刃7000P 2021
+									</div>
+									<div id="eventDescription">
+										参与回复额外抽取京东卡
+									</div>
+								</div>
+								<div id="reward">
+									<a>京东卡</a>
+									<div id="timeLimit">
+										3.17-3.23
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="recommendCompetition" style="display: none;">
+						<div class="comp">
+							<img src="images/-ikzzQ5-fb2vK1S1o-1o.png">
+							<div id="compDetail">
+								<div id="compName">
+									<!--比赛名称-->
+									LPL春季赛
+								</div>
+								<div id="compTime">
+									<!--比赛时间-->
+									03-29 17:00 
+									<!--已结束/进行中-->
+									<div>
+										<a>进行中</a>
+									</div>
+								</div>
+							</div>
+							<div id="compScore">
+								<div id="teamA">
+									<!--队伍1队名-->
+									<a>RW</a>
+								</div>
+								<div id="teamAScore">
+									<!--队伍1得分-->
+									0
+								</div>
+								<div id="colon">
+									:
+								</div>
+								<div id="teamBScore">
+									<!--队伍2得分-->
+									2
+								</div>							
+								<div id="teamB">
+									<!--队伍2队名-->
+									<a>WE</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="comp">
+							<img src="images/-ikzzQ5-5xvvK2S1o-1o.png">
+							<div id="compDetail">
+								<div id="compName">
+									<!--比赛名称-->
+									守望先锋联赛2020赛季
+								</div>
+								<div id="compTime">
+									<!--比赛时间-->
+									08-15 05:00
+									<!--已结束/进行中-->
+									<div>
+										<a>进行中</a>
+									</div>
+								</div>
+							</div>
+							<div id="compScore">
+								<div id="teamA">
+									<!--队伍1队名-->
+									<a>GLA</a>
+								</div>
+								<div id="teamAScore">
+									<!--队伍1得分-->
+									-
+								</div>
+								<div id="colon">
+									:
+								</div>
+								<div id="teamBScore">
+									<!--队伍2得分-->
+									-
+								</div>							
+								<div id="teamB">
+									<!--队伍2队名-->
+									<a>DAL</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="comp">
+							<img src="images/-ikzzQ5-jfxcK2S1o-1o.png">
+							<div id="compDetail">
+								<div id="compName">
+									<!--比赛名称-->
+									2020KPL秋季赛季后赛
+								</div>
+								<div id="compTime">
+									<!--比赛时间-->
+									12-19 17:00
+									<!--已结束/进行中-->
+									<div>
+										<a>已结束</a>
+									</div>
+								</div>
+							</div>
+							<div id="compScore">
+								<div id="teamA">
+									<!--队伍1队名-->
+									<a>DYG</a>
+								</div>
+								<div id="teamAScore">
+									<!--队伍1得分-->
+									4
+								</div>
+								<div id="colon">
+									:
+								</div>
+								<div id="teamBScore">
+									<!--队伍2得分-->
+									0
+								</div>							
+								<div id="teamB">
+									<!--队伍2队名-->
+									<a>成都AG超玩会</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="comp">
+							<img src="images/-ikzzQ5-gscxK2S1o-1o.png">
+							<div id="compDetail">
+								<div id="compName">
+									<!--比赛名称-->
+									2020 梦幻联赛S13
+								</div>
+								<div id="compTime">
+									<!--比赛时间-->
+									01-26 20:30
+									<!--已结束/进行中-->
+									<div>
+										<a>已结束</a>
+									</div>
+								</div>
+							</div>
+							<div id="compScore">
+								<div id="teamA">
+									<!--队伍1队名-->
+									<a>Secret</a>
+								</div>
+								<div id="teamAScore">
+									<!--队伍1得分-->
+									3
+								</div>
+								<div id="colon">
+									:
+								</div>
+								<div id="teamBScore">
+									<!--队伍2得分-->
+									2
+								</div>							
+								<div id="teamB">
+									<!--队伍2队名-->
+									<a>EG</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="comp">
+							<img src="images/-ikzzQ5-104iK1S1o-1o.png">
+							<div id="compDetail">
+								<div id="compName">
+									<!--比赛名称-->
+									2021黄金战队联赛
+								</div>
+								<div id="compTime">
+									<!--比赛时间-->
+									01-26 20:30
+									<!--已结束/进行中-->
+									<div>
+										<a>已结束</a>
+									</div>
+								</div>
+							</div>
+							<div id="compScore">
+								<div id="teamA">
+									<!--队伍1队名-->
+									<a>LP</a>
+								</div>
+								<div id="teamAScore">
+									<!--队伍1得分-->
+									2
+								</div>
+								<div id="colon">
+									:
+								</div>
+								<div id="teamBScore">
+									<!--队伍2得分-->
+									1
+								</div>							
+								<div id="teamB">
+									<!--队伍2队名-->
+									<a>RNG</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="backToTop" onclick="backTop()">
+				</div>
+	</div>
+	</div>
+
+	<div class="tail">
+
+		<div class="tailbox"> 
+			<div id="linkTitle">
+				友情链接
+			</div>
+			<div id="links">
+				<div>
+					<a>NGA社区</a>
+				</div>
+				<div>
+					<a>NGA客户端</a>
+				</div>
+				<div>
+					<a>178游戏网</a>
+				</div>
+				<div>
+					<a>LOL一周韩服胜率</a>
+				</div>
+				<div>
+					<a>电玩巴士</a>
+				</div>
+				<div>
+					<a>神之梯炉石线上赛</a>
+				</div>
+				<div>
+					<a>A9VG</a>
+				</div>
+				<div>
+					<a>引力资讯</a>
+				</div>
+				<div>
+					<a>网易cc</a>
+				</div>
+				<div>
+					<a>VPGAME DOTA2</a>
+				</div>
+				<div>
+					<a>VARENA电竞</a>
+				</div>
+			</div>
+			<div id="foot">
+				<div class="ngaLogo">
+					<a id="logoBox" href="index.html" target="_blank">
+						<img src="images/logo.png">
+					</a>
+				</div>
+				<div class="contact">
+					商务合作
+					<br>
+					wangchuang#donews.com
+					<br>
+					销售合作
+					<br>
+					wangyanzhe#donews.com
+					<br>
+					多牛传媒旗下网站
+				</div>
+				<div class="authorization">
+					北京月神之箭网络科技有限公司 Copyright 2018
+					<br>
+					京ICP备16021487号-7
+					<br>
+					京公网安备 11010802027588号
+				</div>
+				<div id="straightLine1">
+				</div>
+				<div id="straightLine2">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
