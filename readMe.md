@@ -3,4 +3,4 @@
 ##### 原页面地址：http://nga.cn/ (original web url:http://nga.cn/)
 
 前端学习-静态网页练习
-frontend learning-static web page practice
+(frontend learning-static web page practice)
