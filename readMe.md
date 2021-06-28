@@ -4,3 +4,9 @@
 
 前端学习:静态网页练习
 (frontend Study: static web page practice)
+
+![avatar](/images/final/f1.png)
+
+![avatar](/images/final/f2.png)
+
+![avatar](/images/final/f3.png)
